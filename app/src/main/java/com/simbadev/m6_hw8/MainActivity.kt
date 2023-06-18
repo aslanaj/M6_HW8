@@ -38,48 +38,60 @@ import com.simbadev.m6_hw8.ui.theme.M6_HW8Theme
 val list = listOf(
     YoutubePlayListsModel(
         image = R.drawable.sixth,
-        title =  "Text 1",
+        title =  "Lorem ipsum dolor sit amet consectetur, adipiscing elit facilisi blandit.",
         count = "Count 1"),
     YoutubePlayListsModel(
         image = R.drawable.second,
-        title =  "Text 2",
+        title =  "Lorem ipsum dolor sit amet consectetur",
         count = "Count 3"),
     YoutubePlayListsModel(
         image = R.drawable.sixth,
-        title =  "Text 3",
+        title =  "Lorem ipsum dolor sit amet consectetur",
         count = "Count 3"),
     YoutubePlayListsModel(
         image = R.drawable.fivth,
-        title =  "Text 4",
+        title =  "Lorem ipsum dolor sit amet consectetur",
         count = "Count 4"),
     YoutubePlayListsModel(
         image = R.drawable.sixth,
-        title =  "Text 4",
+        title =  "Lorem ipsum dolor sit amet consectetur",
         count = "Count 4"),
     YoutubePlayListsModel(
         image = R.drawable.third,
-        title =  "Text 5",
+        title =  "Lorem ipsum dolor sit amet consectetur",
         count = "Count 5"),
     YoutubePlayListsModel(
         image = R.drawable.first,
-        title =  "Text 6",
+        title =  "Lorem ipsum dolor sit amet consectetur",
         count = "Count 6"),
     YoutubePlayListsModel(
         image = R.drawable.sixth,
-        title =  "Text 7",
+        title =  "Lorem ipsum dolor sit amet consectetur",
         count = "Count 7"),
     YoutubePlayListsModel(
         image = R.drawable.third,
-        title =  "Text 8",
+        title =  "Lorem ipsum dolor sit amet consectetur",
         count = "Count 8"),
     YoutubePlayListsModel(
         image = R.drawable.first,
-        title =  "Text 9",
+        title =  "Lorem ipsum dolor sit amet consectetur",
         count = "Count 9"),
     YoutubePlayListsModel(
         image = R.drawable.sixth,
-        title =  "Text 10",
+        title =  "Lorem ipsum dolor sit amet consectetur",
         count = "Count 10"),
+    YoutubePlayListsModel(
+        image = R.drawable.sixth,
+        title =  "Lorem ipsum dolor sit amet consectetur",
+        count = "Count 3"),
+    YoutubePlayListsModel(
+        image = R.drawable.fivth,
+        title =  "Lorem ipsum dolor sit amet consectetur",
+        count = "Count 4"),
+    YoutubePlayListsModel(
+        image = R.drawable.sixth,
+        title =  "Lorem ipsum dolor sit amet consectetur",
+        count = "Count 4"),
 )
 
 class MainActivity : ComponentActivity() {
@@ -107,7 +119,7 @@ fun YoutubePlayListsScreen(youtubePlayListsModel: List<YoutubePlayListsModel>) {
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(horizontal = 16.dp, vertical = 16.dp)
+                    .padding(horizontal = 16.dp, vertical = 8.dp)
 
             ) {
                 Card(
@@ -136,6 +148,7 @@ fun YoutubePlayListsScreen(youtubePlayListsModel: List<YoutubePlayListsModel>) {
                                     .fillMaxWidth()
                                     .padding(start = 24.dp),
                                 text = stringResource(R.string.playlist),
+                                fontSize = 12.sp,
                                 color = Color.White,
                                 textAlign = TextAlign.Center
                             )
@@ -160,10 +173,8 @@ fun YoutubePlayListsScreen(youtubePlayListsModel: List<YoutubePlayListsModel>) {
                     )
                 }
             }
-
         }
     })
-
 }
 
 @Preview(showBackground = true)
